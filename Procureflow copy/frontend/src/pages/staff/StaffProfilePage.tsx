@@ -170,8 +170,7 @@ export default function StaffProfilePage() {
 
   if (isLoading) return (
     <div className="space-y-4 max-w-2xl mx-auto">
-      {[1,2,3].map(i => <div key={i} key={i} className="h-24 bg-surface-alt animate-pulse rounded-2xl" />)}
-    </div>
+     {[1,2,3].map(i => <div key={i} className="h-24 bg-surface-alt animate-pulse rounded-2xl"></div>
   )
 
   const displayPhoto = photoPreview || data?.photo
