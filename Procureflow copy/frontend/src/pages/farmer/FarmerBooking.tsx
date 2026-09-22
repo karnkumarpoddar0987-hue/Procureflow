@@ -385,7 +385,7 @@ export default function FarmerBooking() {
                       <div>
                         <p className="font-medium">{selectedCrop.crop_name}</p>
                         <p className="text-xs text-muted-foreground">
-                          Available: {selectedCrop.quantity_quintals} qtl ({(selectedCrop.quantity_quintals * 100).toFixed(0)} kg)
+                          Available: {selectedCrop.quantity_quintals ?? 0} qtl ({((selectedCrop.quantity_quintals ?? 0) * 100).toFixed(0)} kg)
                         </p>
                       </div>
                     </div>

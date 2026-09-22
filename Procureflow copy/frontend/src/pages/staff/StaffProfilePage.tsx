@@ -168,10 +168,16 @@ export default function StaffProfilePage() {
     } catch { window.print() }
   }
 
-  if (isLoading) return (
-    <div className="space-y-4 max-w-2xl mx-auto">
-     {[1,2,3].map(i => <div key={i} className="h-24 bg-surface-alt animate-pulse rounded-2xl"></div>
-  )
+ if (isLoading) return (
+  <div className="space-y-4 max-w-2xl mx-auto">
+    {[1, 2, 3].map(i => (
+      <div
+        key={i}
+        className="h-24 bg-surface-alt animate-pulse rounded-2xl"
+      ></div>
+    ))}
+  </div>
+)
 
   const displayPhoto = photoPreview || data?.photo
   const roleLabel = data?.role === 'CENTRE_OPERATOR' ? 'Centre Operator' : 'Government Officer'
